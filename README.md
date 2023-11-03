@@ -7,9 +7,9 @@ Nuestro contenido esta basado en distintas etapas:
   * [Entorno Virtual](#entorno-virtual)
   * [Renderizado y Despliegue](#renderizado-y-despliegue)
   * [Recoleccion del Dataset](#recoleccion-del-dataset)
-  * [Procesamiento del Dataset (ETL)](#procesamiento-del-dataset-(etl))
-  * [Analisis Exploratorio (EDA)](#analisis-exploratorio-(eda))
-  * [Funciones propuestas y API (API)](#funciones-propuestas-y-api)
+  * [Procesamiento del Dataset](#procesamiento-del-dataset)
+  * [Analisis Exploratorio](#analisis-exploratorio)
+  * [Funciones propuestas y API](#funciones-propuestas-y-api)
   * [Modelo de machine Learning](#modelo-de-machine-learning)
   * [Archivo Main](#archivo-main)
   * [Conclusion](#conclusion)
@@ -64,7 +64,7 @@ __Recomendaciones__:
 1. Crear una carpeta llamada "data" dentro de nuestro folder principal para tener toda la informacion en un lugar
 2. Utilizar pandas para crear dataframes. Esto nos permite ver los archivos como tablas y poder trabajar con dicha libreria
 
-# Procesamiento del Dataset (ETL)
+# Procesamiento del Dataset
 
 Se creo un Notebook llamado __etl,ipynb__ con el fin de convertir nuestros archivos .json.gz a pandas.Dataframe. Ademas, se crearon multiples funciones que nos ayudaron al ordenamiento, tranformacion y visualizacion de los distintos formatos encontrados en los archivos originales. Una vez los datos fueron transformados, estos fueron cargados como archivos tipo .parquet con el fin de ahorrar todo el espacio posible.
 
@@ -80,7 +80,7 @@ __Funciones:__
 El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
 El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
 
-# Analisis Exploratorio (EDA)
+# Analisis Exploratorio
 
 Se creo un Notebook llamado __eda.ipynb__ con el fin de explorar nuestros datos y tener una vision de que esta pasando con estos. Es importante resaltar que se busca informacion util como: Outliers, Quartiles, Moda, Media, Mediana, etc. Ademas, por cada analisis o grafica creada dentro del archivo, hay pequenas observaciones al final de estos con la intencion de dar una perspectiva de los datos.
 
@@ -92,7 +92,7 @@ __Funciones:__
 El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
 El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
 
-# Funciones propuestas y API (API)
+# Funciones propuestas y API
 
 Se creo un Notebook llamado __api.ipynb__ con el fin de crear todas aquellas funciones propuestas dentro del repositorio [PI_ML_OPS](https://github.com/soyHenry/PI_ML_OPS/tree/PT). Ademas, tambien se crearon datasets que pueden ser utiles al momento de llamar a dichas funciones, estos datasets nos permiten ahorrar recursos de la maquina. Se da una introduccion de lo que se plenea usar para poder consumir nuestra API y se generan pruebas para verificar la funcionalidad.
 
