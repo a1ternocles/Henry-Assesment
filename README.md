@@ -4,7 +4,7 @@ Este repositorio busca mostrar adecuadamente el proceso realizado en pro de la r
 Nuestro contenido esta basado en distintas etapas:
 
   * [Objetivo](#objetivo)
-  * [Entorno Virtual](#entorno_virtual)
+  * [Entorno Virtual](#entorno-virtual)
   * [Renderizado y Despliegue](#render)
   * [Recoleccion del Dataset](#dataset_collection)
   * [Procesamiento del Dataset (ETL)](#etl)
