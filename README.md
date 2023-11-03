@@ -135,7 +135,9 @@ __Funciones:__
 5. def sentiment_analysis(anio : int)
 6. def recomendacion_juego(id_producto)
 
+# Conclusion
+
 Podemos decir que este MVP nos permitio poner en practica todo lo aprendido durante el curso de Henry. Pudimos crear un proceso de ETL en el dataset provisto, un analisis exploratorio que nos da importantes insights sobre el negocio, funciones que nos permiten obtener datos que nos interesan, un modelo de machine learning que nos da recomendaciones teniendo en cuenta el genero de un juego en especifico y el deployment de nuestra pagina web que permite a cualquier usuario hacer uso de todo aquello por lo que hemos trabajado.
 
-# Enlaces
+
 
