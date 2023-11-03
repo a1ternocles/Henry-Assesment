@@ -4,7 +4,7 @@ Este repositorio busca mostrar adecuadamente el proceso realizado en pro de la r
 Nuestro contenido esta basado en distintas etapas:
 
   * [Objetivo](#objetivo)
-  * [Entorno Virtual](#env)
+  * [Entorno Virtual](#entorno_virtual)
   * [Renderizado y Despliegue](#render)
   * [Recoleccion del Dataset](#dataset_collection)
   * [Procesamiento del Dataset (ETL)](#etl)
@@ -66,8 +66,7 @@ __Recomendaciones__:
 
 # Procesamiento del Dataset (ETL)
 
-## Nota: 
-El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor orden y posicion de todos los elementos que se encuentran en el codigo, ademas
+## Nota: El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor orden y posicion de todos los elementos que se encuentran en el codigo, ademas
 
 ETL, que significa Extracción, Transformación y Carga, es un proceso fundamental en el ámbito de la gestión y análisis de datos. Consiste en la extracción de datos desde múltiples fuentes, su transformación para ajustarlos, limpiarlos, y estructurarlos de manera coherente, y finalmente, cargarlos en un repositorio o almacén de datos para su posterior análisis. 
 Teniendo este concepto en mente, se creo un Notebook llamado __etl,ipynb__ con el fin de convertir nuestros archivos .json.gz a pandas.Dataframe
