@@ -41,7 +41,7 @@ De esta manera hemos creado nuestro entorno virtual dentro de la carpeta que hay
 
 Una vez creado nuestra carpeta que contenga todos los archivos con los que trabajaremos, podemos considerar el crear una pagina web y al mismo tiempo desplegarla con el fin de que nuestra API pueda consumirse sin mayor incoveniente.
 
-__Pasos:(En la terminal o Git Bash)__
+__Pasos(En la terminal o Git Bash):__
 1. Actualizar nuestro entorno: python -m pip install --upgrade pip
 2. pip freeze > requirements.txt (Se recomienda copiar el requirement.txt de este repositorio para evitar errores)
 3. Crear un repositorio Git Hub: [Como crear un repositorio](https://docs.github.com/es/get-started/quickstart/create-a-repo)
