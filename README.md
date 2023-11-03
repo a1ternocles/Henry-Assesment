@@ -21,11 +21,14 @@ El proyecto busca desarrollar una API con FastAPI para proporcionar consultas de
 
 Un entorno virtual es un ambiente aislado y autónomo que permite instalar y ejecutar diferentes versiones de programas, bibliotecas y dependencias específicas para un proyecto o aplicación.
 Sirve para:
-* Isolar proyectos: Permite trabajar en varios proyectos con diferentes requerimientos de software sin que entren en conflicto unos con otros.
-* Gestionar dependencias: Facilita la gestión de las dependencias de un proyecto, ya que se pueden instalar versiones específicas de librerías y herramientas sin afectar el sistema global.
-* Reproducibilidad: Asegura que un proyecto sea reproducible en diferentes entornos al tener control sobre las versiones de las dependencias.
-* Organización: Ayuda a mantener orden en el desarrollo al separar claramente las dependencias y versiones utilizadas en un proyecto específico.
-* 
+* __Isolar proyectos__: Permite trabajar en varios proyectos con diferentes requerimientos de software sin que entren en conflicto unos con otros.
+* __Gestionar dependencias__: Facilita la gestión de las dependencias de un proyecto, ya que se pueden instalar versiones específicas de librerías y herramientas sin afectar el sistema global.
+* __Reproducibilidad__: Asegura que un proyecto sea reproducible en diferentes entornos al tener control sobre las versiones de las dependencias.
+* __Organización__: Ayuda a mantener orden en el desarrollo al separar claramente las dependencias y versiones utilizadas en un proyecto específico.
+
+### Pasos:
+ * hola que tal
+
 # Renderizado y despliegue de una pagina web
 # Recoleccion del dataset a trabajar
 # Procesamiento de dicho dataset (ETL)
