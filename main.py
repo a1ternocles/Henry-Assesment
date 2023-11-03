@@ -75,7 +75,7 @@ def PlayTimeGenre(genero: str):
         if type(genero) == str:
 
             genero = genero.lower().title()
-            playtime_data = pd.read_parquet("Henry-Assesment\data\playtime_data")
+            playtime_data = pd.read_parquet("data\\playtime_data")
             lista_genero = playtime_data["genres"].unique()
 
             if genero in lista_genero:
@@ -106,7 +106,7 @@ def UserForGenre(genero : str):
         if type(genero) == str:
 
             genero = genero.lower().title()
-            usergenre_data = pd.read_parquet("Henry-Assesment\\data\\usergenre_data")
+            usergenre_data = pd.read_parquet("data\\usergenre_data")
             lista_genero = usergenre_data["genres"].unique()
 
             if genero in lista_genero:
@@ -144,7 +144,7 @@ def UsersRecommend(anio : int):
     try:
         if type(anio) == int:
 
-            usersrecommend_data = pd.read_parquet("Henry-Assesment\\data\\usersrecommend_data")
+            usersrecommend_data = pd.read_parquet("data\\usersrecommend_data")
             lista_anio = usersrecommend_data["release_year"].unique()
 
             if anio in lista_anio:
@@ -179,7 +179,7 @@ def UsersNotRecommend(anio : int):
     try:
         if type(anio) == int:
 
-            usersrecommend_data = pd.read_parquet("Henry-Assesment\\data\\usersrecommend_data")
+            usersrecommend_data = pd.read_parquet("data\\usersrecommend_data")
             lista_anio = usersrecommend_data["release_year"].unique()
 
             if anio in lista_anio:
@@ -214,12 +214,12 @@ def sentiment_analysis(anio : int):
     try:
         if type(anio) == int:
 
-            sentiment_data = pd.read_parquet("Henry-Assesment\\data\\sentiment_data")
+            sentiment_data = pd.read_parquet("data\\sentiment_data")
             lista_anio = sentiment_data["release_year"].unique()
 
             if anio in lista_anio:
                 
-                sentiment_data = pd.read_parquet("Henry-Assesment\\data\\sentiment_data").dropna()
+                sentiment_data = pd.read_parquet("data\\sentiment_data").dropna()
                 lista_anio = sentiment_data["release_year"].unique()
                 data_anio = sentiment_data[sentiment_data["release_year"] == anio].drop(columns="item_id")
                 df_data_anio = pd.DataFrame(data_anio.value_counts()).sort_index()
@@ -251,7 +251,7 @@ def sentiment_analysis(anio : int):
 def recomendacion_juego(id_producto):
     # Obtencion del Dataset
 
-    item_data = pd.read_parquet("Henry-Assesment\\data\\steam_game_data")
+    item_data = pd.read_parquet("data\\steam_game_data")
     col_drop = ["release_date", "tags", "specs", "price", "early_access", "developer", "release_year"]
     item_data.drop(columns= col_drop, inplace=True )
 
