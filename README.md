@@ -17,6 +17,11 @@ Nuestro contenido esta basado en distintas etapas:
 # Objetivo
 El proyecto busca desarrollar una API con FastAPI para proporcionar consultas detalladas sobre reseñas de videojuegos, incluyendo estadísticas por género, horas jugadas por usuario, recomendaciones de juegos y análisis de sentimientos. También implica explorar manualmente los datos, crear un modelo de recomendación y desplegar la API en un servicio de alojamiento. El objetivo final es presentar un video demostrativo que muestre el funcionamiento de la API y el modelo de aprendizaje automático.
 
+## Enlaces:
+[Deployment](https://andresruiz-deploy.onrender.com/)
+[Docs & Funciones](https://andresruiz-deploy.onrender.com/docs)
+[Video]()
+
 # Entorno Virtual
 
 Un entorno virtual es un ambiente aislado y autónomo que permite instalar y ejecutar diferentes versiones de programas, bibliotecas y dependencias específicas para un proyecto o aplicación.
@@ -97,11 +102,11 @@ El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
 Se creo un Notebook llamado __api.ipynb__ con el fin de crear todas aquellas funciones propuestas dentro del repositorio [PI_ML_OPS](https://github.com/soyHenry/PI_ML_OPS/tree/PT). Ademas, tambien se crearon datasets que pueden ser utiles al momento de llamar a dichas funciones, estos datasets nos permiten ahorrar recursos de la maquina. Se da una introduccion de lo que se plenea usar para poder consumir nuestra API y se generan pruebas para verificar la funcionalidad.
 
 __Funciones:__
-1. def PlayTimeGenre(genero: str):
-2. def UserForGenre(genero : str):
-3. def UsersRecommend(anio : int):
-4. def UsersNotRecommend(anio : int):
-5. def sentiment_analysis(anio : int):
+1. def PlayTimeGenre(genero: str)
+2. def UserForGenre(genero : str)
+3. def UsersRecommend(anio : int)
+4. def UsersNotRecommend(anio : int)
+5. def sentiment_analysis(anio : int)
 
 ## Nota: 
 El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
@@ -109,17 +114,28 @@ El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
 
 # Modelo de machine Learning
 
-Se creo un notebook llamado __ml_model.ipynb__ en el cual nuestra intencion principal es la de crear un modelo de machine learning que nos permita desarrollar una recomendacion item-item teniendo como base el codigo ID de algun juego que se encuentre en el dataset. Esto es, permite sugerir elementos items similares a aquellos usuarios que han interactuado con un juego en especifico. Dentro del modelo se usa la __Similitud del coseno__ con el fin de calcular el parecido entre distinto datos y asi obtener el Output que estamos buscando. Es de resaltar que este modulo hace los calculos entre vectores, por tanto vectorizamos nuestro datos usando el modulo __TfidfVectorizer__.
+Se creo un notebook llamado __ml_model.ipynb__ en el cual nuestra intencion principal es la de crear un modelo de machine learning que nos permita desarrollar una recomendacion item-item teniendo como base el codigo ID de algun juego que se encuentre en el dataset. Esto es, permite sugerir elementos con generos similares a aquellos usuarios que han interactuado con un juego en especifico. Dentro del modelo se usa la __Similitud del coseno__ con el fin de calcular el parecido entre distinto datos y asi obtener el Output que estamos buscando. Es de resaltar que este modulo hace los calculos entre vectores, por tanto vectorizamos nuestro datos usando el modulo __TfidfVectorizer__.
 
 __Funciones:__
-1. def recomendacion_juego(id_producto):
+1. def recomendacion_juego(id_producto)
 
 ## Nota: 
 El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
 El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
 
 # Archivo Main
-# Conclusion
 
+Se creo un archivo llamado main.py. En este documento se trajeron las librerias necesarias, se creo un pequeno codigo PHP y ademas se trajeron todas las funciones creadas con anterioridad. Nuestra pagina web puede leer este documento y traer todo el trabajo realizado previamente y asi ser consumido por la API para darnos un resultado.
 
+__Funciones:__
+1. def PlayTimeGenre(genero: str)
+2. def UserForGenre(genero : str)
+3. def UsersRecommend(anio : int)
+4. def UsersNotRecommend(anio : int)
+5. def sentiment_analysis(anio : int)
+6. def recomendacion_juego(id_producto)
+
+Podemos decir que este MVP nos permitio poner en practica todo lo aprendido durante el curso de Henry. Pudimos crear un proceso de ETL en el dataset provisto, un analisis exploratorio que nos da importantes insights sobre el negocio, funciones que nos permiten obtener datos que nos interesan, un modelo de machine learning que nos da recomendaciones teniendo en cuenta el genero de un juego en especifico y el deployment de nuestra pagina web que permite a cualquier usuario hacer uso de todo aquello por lo que hemos trabajado.
+
+# Enlaces
 
