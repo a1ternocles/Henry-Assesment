@@ -26,8 +26,10 @@ Sirve para:
 * __Reproducibilidad__: Asegura que un proyecto sea reproducible en diferentes entornos al tener control sobre las versiones de las dependencias.
 * __Organización__: Ayuda a mantener orden en el desarrollo al separar claramente las dependencias y versiones utilizadas en un proyecto específico.
 
-### Pasos:
- * hola que tal
+Pasos:
+          * Service Level 85%
+          * CSAT 85%
+          * Coaching 100%
 
 # Renderizado y despliegue de una pagina web
 # Recoleccion del dataset a trabajar
