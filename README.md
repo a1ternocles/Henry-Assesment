@@ -5,9 +5,9 @@ Nuestro contenido esta basado en distintas etapas:
 
   * [Objetivo](#objetivo)
   * [Entorno Virtual](#entorno-virtual)
-  * [Renderizado y Despliegue](#render)
-  * [Recoleccion del Dataset](#dataset_collection)
-  * [Procesamiento del Dataset (ETL)](#etl)
+  * [Renderizado y Despliegue](#renderizado-y-despliegue)
+  * [Recoleccion del Dataset](#recoleccion-del-dataset)
+  * [Procesamiento del Dataset (ETL)](#procesamiento-del-dataset)
   * [Creacion de un analisis exploratorio (EDA)](#eda)
   * [Funciones propuestas y API (API)](#api)
   * [Modelo de machine Learning](#ml)
