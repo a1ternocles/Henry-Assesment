@@ -7,11 +7,11 @@ Nuestro contenido esta basado en distintas etapas:
   * [Entorno Virtual](#entorno-virtual)
   * [Renderizado y Despliegue](#renderizado-y-despliegue)
   * [Recoleccion del Dataset](#recoleccion-del-dataset)
-  * [Procesamiento del Dataset (ETL)](#procesamiento-del-dataset)
-  * [Creacion de un analisis exploratorio (EDA)](#eda)
-  * [Funciones propuestas y API (API)](#api)
-  * [Modelo de machine Learning](#ml)
-  * [Creacion de un archivo Main](#main)
+  * [Procesamiento del Dataset (ETL)](#procesamiento-del-dataset-(etl))
+  * [Analisis Exploratorio (EDA)](#analisis-exploratorio-(eda))
+  * [Funciones propuestas y API (API)](#funciones-propuestas-y-api)
+  * [Modelo de machine Learning](#modelo-de-machine-learning)
+  * [Archivo Main](#archivo-main)
   * [Conclusion](#conclusion)
 
 # Objetivo
@@ -66,15 +66,59 @@ __Recomendaciones__:
 
 # Procesamiento del Dataset (ETL)
 
-## Nota: El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor orden y posicion de todos los elementos que se encuentran en el codigo, ademas
+Se creo un Notebook llamado __etl,ipynb__ con el fin de convertir nuestros archivos .json.gz a pandas.Dataframe. Ademas, se crearon multiples funciones que nos ayudaron al ordenamiento, tranformacion y visualizacion de los distintos formatos encontrados en los archivos originales. Una vez los datos fueron transformados, estos fueron cargados como archivos tipo .parquet con el fin de ahorrar todo el espacio posible.
 
-ETL, que significa Extracción, Transformación y Carga, es un proceso fundamental en el ámbito de la gestión y análisis de datos. Consiste en la extracción de datos desde múltiples fuentes, su transformación para ajustarlos, limpiarlos, y estructurarlos de manera coherente, y finalmente, cargarlos en un repositorio o almacén de datos para su posterior análisis. 
-Teniendo este concepto en mente, se creo un Notebook llamado __etl,ipynb__ con el fin de convertir nuestros archivos .json.gz a pandas.Dataframe
+__Funciones:__
+1. def json_double_a_df(json_file)
+2. def json_simple_a_df(json_file)
+3. def diccionario_tipos_datos(dataframe_file)
+4. def cambio_a_float(dato)
+5. def cambio_a_datetime(dato)
+6. def abrir_lista(dataframe_file,nombre_col)
 
-# Creacion de un analisis exploratorio (EDA)
+## Nota: 
+El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
+El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
+
+# Analisis Exploratorio (EDA)
+
+Se creo un Notebook llamado __eda.ipynb__ con el fin de explorar nuestros datos y tener una vision de que esta pasando con estos. Es importante resaltar que se busca informacion util como: Outliers, Quartiles, Moda, Media, Mediana, etc. Ademas, por cada analisis o grafica creada dentro del archivo, hay pequenas observaciones al final de estos con la intencion de dar una perspectiva de los datos.
+
+__Funciones:__
+1. def df_bool(dataframe_file, col, year, bool)
+2. def analisis_sentimiento(data)
+
+## Nota: 
+El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
+El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
+
 # Funciones propuestas y API (API)
+
+Se creo un Notebook llamado __api.ipynb__ con el fin de crear todas aquellas funciones propuestas dentro del repositorio [PI_ML_OPS](https://github.com/soyHenry/PI_ML_OPS/tree/PT). Ademas, tambien se crearon datasets que pueden ser utiles al momento de llamar a dichas funciones, estos datasets nos permiten ahorrar recursos de la maquina. Se da una introduccion de lo que se plenea usar para poder consumir nuestra API y se generan pruebas para verificar la funcionalidad.
+
+__Funciones:__
+1. def PlayTimeGenre(genero: str):
+2. def UserForGenre(genero : str):
+3. def UsersRecommend(anio : int):
+4. def UsersNotRecommend(anio : int):
+5. def sentiment_analysis(anio : int):
+
+## Nota: 
+El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
+El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
+
 # Modelo de machine Learning
-# Creacion de un archivo Main
+
+Se creo un notebook llamado __ml_model.ipynb__ en el cual nuestra intencion principal es la de crear un modelo de machine learning que nos permita desarrollar una recomendacion item-item teniendo como base el codigo ID de algun juego que se encuentre en el dataset. Esto es, permite sugerir elementos items similares a aquellos usuarios que han interactuado con un juego en especifico. Dentro del modelo se usa la __Similitud del coseno__ con el fin de calcular el parecido entre distinto datos y asi obtener el Output que estamos buscando. Es de resaltar que este modulo hace los calculos entre vectores, por tanto vectorizamos nuestro datos usando el modulo __TfidfVectorizer__.
+
+__Funciones:__
+1. def recomendacion_juego(id_producto):
+
+## Nota: 
+El orden de este proceso fue creado teniendo en cuenta el patron : Modelo - Vista - Controlador (MVC). Esto nos permite un mayor ordenamiento y posicion de todos los elementos que se encuentran en el codigo.
+El patron creado es llamado: Libreria - Acciones - Vistas (LAV)
+
+# Archivo Main
 # Conclusion
 
 
