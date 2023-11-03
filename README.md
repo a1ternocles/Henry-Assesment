@@ -18,6 +18,14 @@ Nuestro contenido esta basado en distintas etapas:
 El proyecto busca desarrollar una API con FastAPI para proporcionar consultas detalladas sobre reseñas de videojuegos, incluyendo estadísticas por género, horas jugadas por usuario, recomendaciones de juegos y análisis de sentimientos. También implica explorar manualmente los datos, crear un modelo de recomendación y desplegar la API en un servicio de alojamiento. El objetivo final es presentar un video demostrativo que muestre el funcionamiento de la API y el modelo de aprendizaje automático.
 
 # Creacion de un entorno virtual
+
+Un entorno virtual es un ambiente aislado y autónomo que permite instalar y ejecutar diferentes versiones de programas, bibliotecas y dependencias específicas para un proyecto o aplicación.
+Sirve para:
+* Isolar proyectos: Permite trabajar en varios proyectos con diferentes requerimientos de software sin que entren en conflicto unos con otros.
+* Gestionar dependencias: Facilita la gestión de las dependencias de un proyecto, ya que se pueden instalar versiones específicas de librerías y herramientas sin afectar el sistema global.
+* Reproducibilidad: Asegura que un proyecto sea reproducible en diferentes entornos al tener control sobre las versiones de las dependencias.
+* Organización: Ayuda a mantener orden en el desarrollo al separar claramente las dependencias y versiones utilizadas en un proyecto específico.
+* 
 # Renderizado y despliegue de una pagina web
 # Recoleccion del dataset a trabajar
 # Procesamiento de dicho dataset (ETL)
